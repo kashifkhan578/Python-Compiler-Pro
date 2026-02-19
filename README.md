@@ -1,5 +1,30 @@
 # Python-Compiler-Pro
 An advanced GUI-based Python script compiler featuring PyArmor obfuscation, intelligent AST auto-splitting, and a built-in Inno Setup installer generator
+
+# 🚀 Python Ultimate Compiler Pro V5.0
+
+![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![PyInstaller](https://img.shields.io/badge/PyInstaller-Supported-brightgreen)
+![PyArmor](https://img.shields.io/badge/PyArmor-v8%2B_Integrated-orange)
+![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**Python Compiler Pro** is an advanced, all-in-one GUI tool designed to seamlessly obfuscate, compile, and package Python scripts into standalone Windows executables (`.exe`) and professional installers. 
+
+It completely automates the hassle of using PyArmor and PyInstaller via terminal, and introduces an intelligent **AST Auto-Split Engine** to bypass script size limitations natively.
+
+---
+
+## ✨ Key Features
+
+* **🛡️ One-Click Obfuscation & Compilation**: Automatically protects your code with PyArmor and compiles it into a `.exe` using PyInstaller in a single click.
+* **🧠 Intelligent AST Auto-Split Engine**: Automatically detects if a script exceeds PyArmor's trial/AST node limits, intelligently splits the code at safe boundaries (classes/functions) to bypass the limit, compiles it, and restores the original script flawlessly.
+* **🔍 Smart Module Detection**: Scans your entire project folder to automatically detect cross-script imports and applies `--hidden-import` and `--collect-all` to prevent "Module Not Found" errors.
+* **📦 Built-in Inno Setup Generator**: Easily generate `.iss` scripts and compile professional Windows Installers directly from the GUI.
+* **🛠️ Auto-Fix Engine**: Detects missing modules during compilation and automatically attempts to `pip install` them.
+* **☁️ Cloud Command Fetcher**: Automatically updates backend CLI commands via cloud JSON configuration without needing a software update.
+* **🧹 Smart Cleanup**: Automatically clears `__pycache__`, `build`, `dist`, and `.spec` files with one click.
+
 🚀 How to Use
 1. Compiling a Python Script
 Run the tool: python main.py
